@@ -1,0 +1,24 @@
+<div class="urltester-wrapper">
+    <form [formGroup]="profileForm">
+    <input type="text" required placeholder="Enter URL" formControlName="url" > <br>
+    <input type="number" placeholder="Enter Time(Milli Seconds)"  required formControlName="time"> <br>
+    <div class="button-wrapper">
+        <button (click)="testURL()" class="button-testurl">Test URL</button>
+    </div>
+   
+</form>
+</div>
+
+<table>
+    <tr>
+      <th>URL</th>
+      <th>Respond Time(Milli Seconds)</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let tabledata of logs; let i=index">
+      <td>{{tabledata.url}}</td>
+      <td>{{tabledata.time}}</td>
+      <td><button (click)="removelogitem(i)" class="button-testurl">Remove</button></td>
+    </tr>
+    
+  </table>
