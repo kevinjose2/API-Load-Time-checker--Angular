@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.3.3",
-    "@angular/cli": "~13.3.3",
+     "@angular/cli": "~13.3.3",
     "@angular/compiler-cli": "~13.3.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
@@ -40,7 +40,7 @@
     "typescript": "~4.6.2"
   },
   "engines": {
-    "node": " 16.4.2",
+    "node": " 16.10",
     "npm": " 8.5.0"
   }
 }
